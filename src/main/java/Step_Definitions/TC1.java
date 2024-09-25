@@ -35,14 +35,14 @@ public class TC1 {
         System.out.println("This will run before the Scenario");
     }
     
-    @After
-    public void screenshot() throws IOException {
-    	
-    	File scrfile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-    	File demofile = new File("C:\\Users Folder\\workspace2\\CucumberProject\\scr"+i+".jpg");
-    	FileUtils.copyFile(scrfile, demofile);
-    	i+=1;
-    }
+	/*
+	 * @After public void screenshot() throws IOException {
+	 * 
+	 * File scrfile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+	 * File demofile = new
+	 * File("C:\\Users Folder\\workspace2\\CucumberProject\\scr"+i+".jpg");
+	 * FileUtils.copyFile(scrfile, demofile); i+=1; }
+	 */
     
 	@Given("User should navigate to the website")
 	public void user_should_navigate_to_the_website() {
@@ -68,10 +68,10 @@ public class TC1 {
 		wait.until(ExpectedConditions.visibilityOf(addToCart));
 	    addToCart.click();
 	    driver.findElement(By.xpath("//span[@id='nav-cart-count']")).click();
-	    File srcfile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-	    File DestFile=new File("C:\\Users Folder\\workspace2\\CucumberProject\\scr.jpg");
+	    //File srcfile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+	    //File DestFile=new File("C:\\Users Folder\\workspace2\\CucumberProject\\scr.jpg");
 	  //Copy file at destination
-	    FileUtils.copyFile(srcfile, DestFile);
+	    //FileUtils.copyFile(srcfile, DestFile);
 	}
 
 	@AfterAll
