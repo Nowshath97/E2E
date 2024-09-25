@@ -73,10 +73,18 @@ public class TC1 {
 	  //Copy file at destination
 	    //FileUtils.copyFile(srcfile, DestFile);
 	}
+	
+	@After
+	public static void afterscenario() {
+		System.out.println("This will run after the test scenario");
+	}
 
 	@AfterAll
 	public static void teardown() {
 		driver.quit();
+		
+		
+		
 	}
 
 
