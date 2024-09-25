@@ -64,7 +64,7 @@ public class TC1 {
 	@Then("click on an item to view the item and add to cart")
 	public void click_on_an_item_to_view_the_item_and_add_to_cart() throws IOException {
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
-		WebElement addToCart = driver.findElement(By.xpath("//button[@id='a-autoid-3-annou']"));
+		WebElement addToCart = driver.findElement(By.xpath("//button[@id='a-autoid-3-announce']"));
 		wait.until(ExpectedConditions.visibilityOf(addToCart));
 	    addToCart.click();
 	    driver.findElement(By.xpath("//span[@id='nav-cart-count']")).click();
