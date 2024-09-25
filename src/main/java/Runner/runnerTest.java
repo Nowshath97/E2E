@@ -8,8 +8,8 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features="C:\\Users Folder\\workspace2\\CucumberProject\\src\\main\\java\\Testscenarios",
-		glue={"Step_Definitions","C:\\Users Folder\\workspace2\\CucumberProject\\src\\main\\java\\Pages\\Hooks.java"},
+		features="C:\\Users\\Nowshath Shaik\\Git\\workspace2\\CucumberProject\\src\\main\\java\\Testscenarios",
+		glue={"Step_Definitions"},
 		dryRun=false,
 		monochrome = false,
 		tags= ("@SmokeTest"),

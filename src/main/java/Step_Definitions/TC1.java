@@ -74,6 +74,22 @@ public class TC1 {
 	    //FileUtils.copyFile(srcfile, DestFile);
 	}
 	
+	
+
+	@Given("user is on item details page")
+	public void user_is_on_item_details_page() {
+		driver.findElement(By.xpath("//span[@id='nav-cart-count']")).click();
+		System.out.println("Item added to cart");
+	}
+	@Then("click on add to cart button")
+	public void click_on_add_to_cart_button() {
+	  System.out.println("Test cases done");        
+	  
+	}
+
+
+
+	
 	@After
 	public static void afterscenario() {
 		System.out.println("This will run after the test scenario");
